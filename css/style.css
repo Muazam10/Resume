@@ -1,0 +1,372 @@
+/* General */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+/* Navbar Links */
+.navbar .nav-link {
+  position: relative;
+  color: white !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.5s ease;
+}
+
+/* Animated underline */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background:  #ffc107; /* yellow color */
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Active link highlight */
+.navbar .nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Navbar Ended */
+
+
+/* Hero Section */
+#hero {
+  margin-top: 80px;
+  padding: 0;
+}
+
+/* Make carousel full-width */
+.carousel-item img {
+  width: 100vw;
+  height: 70vh; /* Adjust height */
+  object-fit: cover;
+}
+
+/* Remove extra margin/padding */
+.carousel {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero intro block */
+.hero {
+  background: #fff3e0;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Hero Section Ended*/
+
+/* About Section Title */
+
+
+#about h2 {
+  color: #212529;
+  font-weight: 600;
+}
+
+#about p {
+  color: #555;
+}
+
+/* Orange/Yellow Button */
+#about .btn {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+#about .btn:hover {
+  background-color: #e0a800; /* darker yellow */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Accordion Theme */
+.accordion-button {
+  background-color: #f8f9fa; /* light gray */
+  color: #212529;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #212529; /* dark bg when opened */
+  color: #ffc107; /* yellow text */
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 6px rgba(255, 193, 7, 0.6); /* yellow glow */
+  border-color: #ffc107;
+}
+
+.accordion-item {
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.accordion-body {
+  background-color: #fff; /* white background for readability */
+  color: #444;
+  line-height: 1.6;
+}
+
+/* =========================
+   Experience Section
+========================= */
+/* =========================
+   Experience Section
+========================= */
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 17px;
+  top: 25px;
+  width: 15px;
+  height: 15px;
+  background: #ffc107; /* yellow */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 40px;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.role { font-size: 1.1rem; font-weight: bold; color: #000; }
+.company { color: #ffc107; font-size: 0.95rem; margin-bottom: 8px; font-weight: 600; }
+.date { font-size: 0.85rem; color: #555; }
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.achievement {
+  font-size: 0.85rem;
+  color: #ffc107;
+  font-weight: bold;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+
+/* Form Input fields*/
+/* Input fields focus effect */
+.form-control:focus, 
+.form-select:focus {
+  border-color: #ffcc00;   /* Yellow border */
+  box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.25); /* Light yellow glow */
+}
+/* Cards */
+/* .card {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+} */
+
+/* Footer */
+footer a {
+  color: white;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #ff6600;
+}
+
+/* =========================
+   Mobile Responsive Styles
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Navbar text center on mobile */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* Hero carousel height reduce for mobile */
+  .carousel-item img {
+    height: 45vh; /* mobile par zyada height issue hota hai */
+  }
+
+  /* Section headings resize */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  /* About section spacing */
+  #about .row {
+    text-align: center;
+  }
+
+  /* Timeline: convert to single column */
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .timeline-content {
+    margin-left: 20px;
+  }
+
+  /* Timeline header stack */
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* Contact buttons full width */
+  #contact .btn {
+    width: 100% !important;
+  }
+
+  /* Contact image resize */
+  #contact img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* =========================
+   Tablet Responsive Styles
+   ========================= */
+@media (max-width: 992px) {
+
+  /* Hero height balanced for tablets */
+  .carousel-item img {
+    height: 55vh;
+  }
+
+  /* Timeline width adjust */
+  .timeline {
+    max-width: 100%;
+  }
+
+  /* Timeline content spacing */
+  .timeline-content {
+    padding: 18px;
+  }
+}
+
+
+/* =========================
+   Extra Small Devices
+   ========================= */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
