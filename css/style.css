@@ -51,7 +51,7 @@ body {
 
 /* Make carousel full-width */
 .carousel-item img {
-  width: 100vw;
+  width: 88vw;
   height: 60vh; /* Adjust height */
   object-fit: cover;
 }
@@ -370,4 +370,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
