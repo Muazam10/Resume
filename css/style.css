@@ -268,12 +268,12 @@ footer a:hover {
 
   /* Navbar text center on mobile */
   .navbar-nav {
-    text-align: center;
+    text-align: left;
   }
 
   /* Hero carousel height reduce for mobile */
   .carousel-item img {
-    height: 45vh; /* mobile par zyada height issue hota hai */
+    height: 35vh; /* mobile par zyada height issue hota hai */
   }
 
   /* Section headings resize */
@@ -317,13 +317,13 @@ footer a:hover {
 
   /* Contact buttons full width */
   #contact .btn {
-    width: 100% !important;
+    width: 80% !important;
   }
 
   /* Contact image resize */
   #contact img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -372,6 +372,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 
 
