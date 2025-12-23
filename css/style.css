@@ -45,14 +45,16 @@ body {
 
 /* Hero Section */
 #hero {
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 0;
 }
 
 /* Make carousel full-width */
 .carousel-item img {
-  width: 88vw;
-  height: 60vh; /* Adjust height */
+  width: 80%;
+  height: 50vh; /* Adjust height */
   object-fit: cover;
 }
 
@@ -370,5 +372,6 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 
