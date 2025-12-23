@@ -45,7 +45,7 @@ body {
 
 /* Hero Section */
 #hero {
-  margin-top: 70px;
+  margin-top: 2%;
   margin-left: 5%;
   margin-right: 5%;
   padding: 0;
@@ -372,6 +372,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 
 
