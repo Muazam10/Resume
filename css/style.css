@@ -268,7 +268,7 @@ footer a:hover {
 
   /* Navbar text center on mobile */
   .navbar-nav {
-    text-align: left;
+    text-align: right;
   }
 
   /* Hero carousel height reduce for mobile */
@@ -373,6 +373,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 
 
