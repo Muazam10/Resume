@@ -317,11 +317,12 @@ footer a:hover {
 
   /* Contact buttons full width */
   #contact .btn {
-    width: 80% !important;
+    width: 50% !important;
   }
 
   /* Contact image resize */
   #contact img {
+    margin-top: 15px;
     width: 150px;
     height: 150px;
   }
@@ -372,6 +373,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 
 
